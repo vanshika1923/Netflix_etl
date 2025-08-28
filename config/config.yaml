@@ -1,0 +1,15 @@
+database_url: "sqlite:///warehouse.sqlite"
+
+bronze_inputs:
+  artists: "bronze_inputs/artists.csv"
+  venues: "bronze_inputs/venues.csv"
+  events: "bronze_inputs/events.csv"
+  customers: "bronze_inputs/customers.csv"
+  tickets: "bronze_inputs/tickets.csv"
+  checkins: "bronze_inputs/checkins.csv"
+  refunds: "bronze_inputs/refunds.csv"
+  campaigns: "bronze_inputs/campaigns.csv"
+
+settings:
+  rebuild_silver: true
+  rebuild_gold: true

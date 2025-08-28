@@ -1,0 +1,26 @@
+2025-08-28 15:46:39,706 - INFO - --- Starting Bronze Layer Process (Live from Google Sheets) ---
+2025-08-28 15:46:39,786 - INFO - Successfully executed bronze_schema.sql DDL.
+2025-08-28 15:46:39,788 - INFO - Successfully connected to Google Sheets API (with SSL verification disabled).
+2025-08-28 15:46:42,059 - INFO - Opened Google Sheet: 'Medallion_data'
+2025-08-28 15:46:42,509 - INFO - Extracting data from worksheet: 'locations'...
+2025-08-28 15:46:43,396 - INFO - Extracted 37 rows from 'locations'. Checksum: 1d7e52a16475e936ee5c99807ace12f3d6937e676977262cd485e80409856b1b
+2025-08-28 15:46:43,464 - INFO - Successfully loaded data into bronze.locations.
+2025-08-28 15:46:44,143 - INFO - Extracting data from worksheet: 'users'...
+2025-08-28 15:46:50,817 - INFO - Extracted 54032 rows from 'users'. Checksum: d68087fa3d80a139db80dfd0f0afc448fa1e2f43b7409b15af0ab579bb7f9c2e
+2025-08-28 15:47:03,711 - INFO - Successfully loaded data into bronze.users.
+2025-08-28 15:47:04,214 - INFO - Extracting data from worksheet: 'watchlist'...
+2025-08-28 15:47:09,878 - INFO - Extracted 54032 rows from 'watchlist'. Checksum: 33b658da535087663b84ef4c152180c2e5d4b77d57ea58269ebe0bb84132b303
+2025-08-28 15:47:19,304 - INFO - Successfully loaded data into bronze.watchlist.
+2025-08-28 15:47:20,290 - INFO - Extracting data from worksheet: 'devices'...
+2025-08-28 15:47:25,482 - INFO - Extracted 54032 rows from 'devices'. Checksum: 16200cf3338f0e11a9231d06e660496931d7b7f3f325dd330c045d8276bfa491
+2025-08-28 15:47:31,345 - INFO - Successfully loaded data into bronze.devices.
+2025-08-28 15:47:32,170 - INFO - Extracting data from worksheet: 'subscriptions'...
+2025-08-28 15:47:37,671 - INFO - Extracted 54032 rows from 'subscriptions'. Checksum: a56d57e87e96a8472a1d35224dcdbe9dfcb6c1bd6b29c641461c57572cd4028f
+2025-08-28 15:47:46,005 - INFO - Successfully loaded data into bronze.subscriptions.
+2025-08-28 15:47:46,578 - INFO - Extracting data from worksheet: 'payments'...
+2025-08-28 15:47:52,341 - INFO - Extracted 54032 rows from 'payments'. Checksum: aacd5d6e8000771a4018c8b11e16f3ef3c5297f89ae88c4effc70f069bfdde56
+2025-08-28 15:47:59,792 - INFO - Successfully loaded data into bronze.payments.
+2025-08-28 15:48:00,433 - INFO - Extracting data from worksheet: 'viewing_activity'...
+2025-08-28 15:48:06,448 - INFO - Extracted 54032 rows from 'viewing_activity'. Checksum: 215e422ceaea48f18a44ab66937bdfd7643fe1faf33f81c9017827245795bcc5
+2025-08-28 15:48:16,231 - INFO - Successfully loaded data into bronze.viewing_activity.
+2025-08-28 15:48:16,231 - INFO - --- Bronze Layer Process Finished in 96.52 seconds ---

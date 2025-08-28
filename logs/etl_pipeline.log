@@ -1,0 +1,12 @@
+2025-08-28 15:46:38,824 - INFO - --- Starting ETL Pipeline ---
+2025-08-28 15:46:38,824 - INFO - 
+--- Executing bronze_layer.py ---
+2025-08-28 15:48:16,418 - INFO - ✅ Successfully completed bronze_layer.py
+2025-08-28 15:48:16,418 - INFO - 
+--- Executing silver_layer.py ---
+2025-08-28 15:48:24,624 - INFO - ✅ Successfully completed silver_layer.py
+2025-08-28 15:48:24,624 - INFO - 
+--- Executing gold_layer.py ---
+2025-08-28 15:48:35,245 - INFO - ✅ Successfully completed gold_layer.py
+2025-08-28 15:48:35,245 - INFO - 
+✅✅✅ ETL Pipeline completed successfully in 116.42 seconds ✅✅✅

@@ -1,0 +1,6 @@
+2025-08-28 15:48:16,704 - INFO - --- Starting Silver Layer Build Process using a single SQL script ---
+2025-08-28 15:48:16,722 - INFO - Executing SQL from /home/nineleaps/PycharmProjects/medallion/sql/silver_schema.sql...
+2025-08-28 15:48:16,847 - INFO - Successfully executed silver_schema.sql DDL.
+2025-08-28 15:48:16,847 - INFO - Executing SQL from /home/nineleaps/PycharmProjects/medallion/sql/build_silver_layer.sql...
+2025-08-28 15:48:24,575 - INFO - Successfully executed the unified silver build script.
+2025-08-28 15:48:24,575 - INFO - --- Silver Layer Build Process Finished in 7.87 seconds ---
