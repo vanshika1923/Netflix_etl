@@ -58,7 +58,7 @@ GRANT ALL PRIVILEGES ON DATABASE your_db_name TO your_db_user;
 Once the setup is complete, you can run the ETL pipeline.
 
 2.1. Prepare Source Data
-Ensure your raw data is correctly formatted and available in the Google Sheet named Medallion_Data_Pipeline_AmanVeer.
+Ensure your raw data is correctly formatted and available in the Google Sheet named Medallion_data.
 
 2.2. Run the End-to-End Pipeline
 Execute the main script from the project's root directory. This single command will trigger all three stages of the pipeline.
