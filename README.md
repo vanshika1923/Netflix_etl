@@ -1,6 +1,6 @@
 # Music Events & Ticketing — Medallion Pipeline (Bronze → Silver → Gold → BI)
 
-Batch ETL for a BookMyShow/Bandsintown‑style domain. Ingest 8 Google Sheets (simulated with CSVs) into **Bronze**, clean to **Silver**, and aggregate to **Gold** for analytics such as **sell‑through %, no‑show %, and ROI by campaign**.
+Batch ETL for a Netflix style domain. Ingest 8 Google Sheets (simulated with CSVs) into **Bronze**, clean to **Silver**, and aggregate to **Gold** for analytics such as **sell‑through %, no‑show %, and ROI by campaign**.
 
 ## Quick Start
 ```bash
