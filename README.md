@@ -35,3 +35,65 @@ python etl.py schedule   # hourly demo scheduler
 - `gold_event_sales`: tickets_sold, attendance, **no_show_rate**, **sell_through %**, gross/net revenue
 - `gold_daily_metrics`: daily tickets & revenue
 - `gold_campaign_roi`: spend, conversions, CPA, ROI by event & channel
+
+
+### 2. Data Dictionary
+
+```markdown
+
+
+## Bronze Schema
+The raw, unprocessed data ingested directly from Google Sheets.
+* **locations**: Raw location data.
+    * `country_id` (INT)
+    * `country_code` (VARCHAR)
+    * `country_name` (VARCHAR)
+    * `region_id` (INT)
+    * `region_code` (VARCHAR)
+    * `region_name` (VARCHAR)
+* **users**: Raw user information.
+    * `user_id` (INT)
+    * `user_legacy_id` (VARCHAR)
+    * `name` (VARCHAR)
+    * `email` (VARCHAR)
+    * `age` (INT)
+    * `country_id` (INT)
+    * `region_id` (INT)
+    * `region_code` (VARCHAR)
+    * `region_name` (VARCHAR)
+    * `signup_date` (VARCHAR)
+    * `acquisition_source` (VARCHAR)
+* ... (and so on for all your bronze tables)
+
+## Silver Schema
+The cleansed and validated data, ready for aggregation.
+* **users**: Cleansed user information with enforced data types and unique keys.
+    * `user_id` (INT)
+    * `user_legacy_id` (VARCHAR) - Primary Key.
+    * `name` (VARCHAR)
+    * `email` (VARCHAR)
+    * `age` (INT)
+    * `country_id` (INT)
+    * `region_id` (INT)
+    * `region_code` (VARCHAR)
+    * `region_name` (VARCHAR)
+    * `signup_date` (DATE)
+    * `acquisition_source` (VARCHAR)
+* ... (and so on for all your silver tables)
+
+## Gold Schema
+The final, aggregated data model built for analytics and dashboarding.
+* **dim_date**: A time dimension table[cite: 38].
+    * `date_key` (INT) - Primary Key.
+    * `full_date` (DATE)
+    * ... (and so on for all date-related fields)
+* **dim_user**: A user dimension table[cite: 38].
+    * `user_key` (VARCHAR) - Primary Key.
+    * `name` (VARCHAR)
+    * ... (and so on for all user-related fields)
+* **fact_viewing_activity**: A fact table for content viewing events[cite: 38].
+    * `date_key` (INT) - Foreign Key.
+    * `user_key` (VARCHAR) - Foreign Key.
+    * `content_key` (VARCHAR) - Foreign Key.
+    * ... (and so on for all fact table columns)
+
